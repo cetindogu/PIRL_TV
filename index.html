@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<!--*********************************-->
+<!--*** Thank you, Dash and Otoh! ***-->
+<!--*********************************-->
+
+<html lang="en">
+  
+<!-- Mirrored from muetv.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jan 2018 07:14:13 GMT -->
+<head>
+    <title>PirlTV</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="stylec164.css?v=9">
+    <script src="libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="math.min.js" type="text/javascript"></script>
+    <script src="libs/numeral.js/1.5.3/numeral.min.js"></script>
+    <script src="languages.js"></script>
+    <script src="script30f4.js?v=3"></script>
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+  <body>
+    <div id="loading"><img src="loading.svg" alt="loading"></div>
+    <div id="update_bar"></div>
+    <div id="box">
+      <div id="value" class="t cetin_ready">
+        <div class="v"></div>
+        <div class="o"><span class="c"></span></div>
+      </div>
+
+      <div id="mueValue" class="t cetin_ready">
+        <div class="v"></div>
+        <div class="o">Pirl</div>
+      </div>
+
+      <div id="header1">
+        <div>
+          <span class="en">Masternode earnings</span>
+          <span class="de">Masternode Einnahmen</span>
+          <span class="pl">Doch&oacute;d z Masternode</span>
+
+          <span class="en right">press [H]elp</span>
+          <span class="de right">Dr&uuml;cke [H]ilfe</span>
+          <span class="pl right">[H] pomoc</span>
+        </div>
+      </div>
+
+      <div id="header2">
+        <div>
+          <span class="en">Annual revenue</span>
+          <span class="de">J&auml;hrliche Rendite</span>
+          <span class="pl">Roczna stopa zwrotu</span>
+        </div>
+      </div>
+
+      <div id="fiatMonth" class="t">
+        <div class="v"></div>
+        <div class="o">
+          <span class="c"></span>
+          <span class="en">/month</span>
+          <span class="de">/Monat</span>
+          <span class="pl">/miesi&#261c</span>
+        </div>
+      </div>
+
+      <div id="mueMonth" class="t">
+        <div class="v"></div>
+        <div class="o">
+          <span class="en">PIRL /month</span>
+          <span class="de">PIRL /Monat</span>
+          <span class="pl">PIRL /miesi&#261c</span>
+        </div>
+      </div>
+
+      <div id="interest" class="t">
+        <div class="v"></div>
+      </div>
+
+      <div id="fiatDay" class="t">
+        <div class="v"></div>
+        <div class="o">
+          <span class="c"></span>
+          <span class="en">/day</span>
+          <span class="de">/Tag</span>
+          <span class="pl">/dzie&#324;</span>
+        </div>
+      </div>
+
+      <div id="mueDay" class="t">
+        <div class="v"></div>
+        <div class="o">
+          <span class="en">PIRL /day</span>
+          <span class="de">PIRL /Tag</span>
+          <span class="pl">PIRL /dzie&#324;</span>
+        </div>
+      </div>
+
+      <div id="header4">
+        <div>
+          <span class="en">Your network share</span>
+          <span class="de">Dein Netzwerk Anteil</span>
+          <span class="pl">Udzia&#322; wszystkie</span>
+        </div>
+      </div>
+
+      <div id="shareMn" class="t">
+        <div class="v"></div>
+        <div class="o">
+          <span class="en">Masternodes</span>
+          <span class="de">Masternodes</span>
+          <span class="pl">Wszystkich MN</span>
+        </div>
+      </div>
+
+      <div id="header3">
+        <div>
+          <span class="en">Market rates</span>
+          <span class="de">Marktkurse</span>
+          <span class="pl">Stopy rynkowe</span>
+        </div>
+      </div>
+
+      <div id="bottomLeft" class="t cetin_ready">
+        <div class="">
+          <div id="fiatMue">
+            <div class="v"></div>
+            <div class="o">
+              <span class="c"></span> /PIRL
+            </div>
+          </div>
+          <div id="trenner"></div>
+          <div id="btcMue">
+            <div class="v vm"></div>
+            <div class="o">
+              BTC /PIRL
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fiatBTC" class="t cetin_ready">
+        <div class="v"></div>
+        <div class="o">
+          <span class="c"></span> /BTC
+        </div>
+      </div>
+
+      <div id="shareSupply" class="t cetin_ready">
+        <div class="v"></div>
+        <div class="o">
+          <span class="en">PIRL</span>
+          <span class="de">PIRL</span>
+          <span class="pl"> Wszystkich monet</span>
+        </div>
+      </div>
+      <div id="help">
+        <h1>Help</h1>
+        <p>This simple monitoring tool calculates the estimated income [excl. hosting] of your PIRL Masternodes and displays it in a clear way. The data gets refreshed every minute automatically. To learn more about the PIRL project visit <a href="https://pirl.io/" target="_blank">pirl.io</a>.
+        </p>
+        <h3>Url parameters.<br/>
+         Please note, the custom parameters below are currently not supported.
+        </h3>
+        <p><u>Default parameters</u>:<br/>
+        20000 PIRL (1MN) and USD as fiat currency.</p>
+        <p><u>Custom parameters:</u><br/>
+        <b>curr</b>=EUR or CNY,GBP,CAD,RUB,HKD,JPY,AUD,CHF,PLN<br/>
+        <b>addr</b>=address1,address2,address3... (too many addresses will take some time)
+        <br/>
+        OR<br/>
+        <b>value</b>=customMueAmount</p>
+        <p><u>Examples:</u></p>
+        <span class="url_bar">https://muetv.com/muetv/#curr=EUR&amp;addr=7puXyuD4mt1vudZzMya3c7wfzym9S4ktXP,7gdKrsRzShBS4NSUSrk2VhMcPDKF2MvLWK</span>
+        <span class="url_bar">https://muetv.com/muetv/#curr=CAD&amp;value=2513</span>
+        <h3>Hotkeys</h3>
+        <p>[P] toggle update bar&emsp;[T] switch color theme&emsp;[H] close help window</p>
+        <p><i>+ click on tiles to hide/show them</i></p>
+        <hr>
+        <small>Contact:&emsp;<a href="https://muecoin.slack.com/" target="_blank">Slack</a>&emsp;<a href="https://forum.mymue.com/" target="_blank">PIRL forum</a></small>
+      </div>
+    </div>
+  </body>
+
+<!-- Mirrored from muetv.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jan 2018 07:14:19 GMT -->
+</html>
