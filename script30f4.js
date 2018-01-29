@@ -274,6 +274,15 @@ var MN_COIN_REQUIRED = 20000;
                         case 72:
                             $("#help").toggle();
                             break;
+							 //'S' settings
+                        case 83:
+                            $("#settingsPanel").toggle();
+                            break;
+						case 82:	 //'R' refresh
+                            muetv.reload()
+                            break;
+							
+							
                     }
 
                 });
@@ -361,6 +370,18 @@ var MN_COIN_REQUIRED = 20000;
                 }
 
                 this.data.mn = math.floor(this.data.mue/MN_COIN_REQUIRED);
+				try{
+				
+					if(!$('#inputMn').val())
+						this.data.mn = 1;
+					if($('#inputMn').val()){
+						var mnCount = parseInt($('#inputMn').val());
+						this.data.mn = mnCount;
+					}
+				}
+				catch(err){
+					this.data.mn = 1;
+				}
                 this.data.fiatprice = this.data.pricebtcusd * this.data.btcprice * this.data.rate;
                 this.data.fiatbtc = this.data.pricebtcusd * this.data.rate;
 
