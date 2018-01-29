@@ -1,3 +1,10 @@
+.uctebir{
+	
+	width: 33%;
+	height: 25%;
+	border: 2px solid green;
+}
+
 .cetin_ready
 {
 	border: 2px solid green;
@@ -29,17 +36,22 @@ a, a:visited{ color: #a1a1a1 }
 }
 
 #value{
+    float: right;
+    width: 28%;
+    height: 25%;
+    margin: 4vh 4vh 0 0;
+}
+#valueTotalMn{
     float: left;
-    width: 55%;
+    width: 31.50%;
     height: 25%;
     margin: 4vh 0 0 4vh;
 }
-
 #mueValue{
-    float: right;
-    width: 38.5%;
+    float: left;
+    width: 31.2%;
     height: 25%;
-    margin: 4vh 4vh 0 0;
+    margin: 4vh 0 0 2vh;
 }
 
 #header1{
@@ -159,17 +171,17 @@ a, a:visited{ color: #a1a1a1 }
 
 .o{font-size: 50%}
 
-#value .v #muevalue .v{
+#value .v #muevalue .v #valueTotalMn .v{
     font-size: 150%;
     margin-top: 2vh;
 }
 
-#value .v, #mueValue .vm{
-    font-size: 150%;
-    margin-top: 2vh;
+#value .v, #mueValue .vm #valueTotalMn .vm{
+    /* font-size: 150%; */
+    /* margin-top: 2vh; */
 }
 
-#value .o, #mueValue .o{
+#value .o, #mueValue .o, #valueTotalMn .o {
     font-size: 65%;
     margin: -0.4em 0 0 5.5vh;
 }
@@ -305,8 +317,9 @@ hr{ border: none; background-color: #747474; height: 0.3%; margin-top: 4%; }
 
     body{font-size: 5.328vw}
 
-    #value{margin: 2.664vw 0 0 2.664vw}
-    #mueValue{margin: 2.664vw 2.664vw 0 0}
+    #value{margin: 1.334vw 2.664vw 0 0}
+    #mueValue{margin: 1.334vw 1.334vw 0 0}
+	#valueTotalMn{margin: 1.334vw 1.334vw 0 2.664vw;}
     #header1{margin: 1.334vw 0 0 2.664vw}
     #header2{margin: 1.334vw 2.664vw 0 0}
     #fiatMonth{margin: 1.334vw 0 0 2.664vw}
@@ -324,8 +337,8 @@ hr{ border: none; background-color: #747474; height: 0.3%; margin-top: 4%; }
     padding: 0 1.998vw 0 2.664vw}
     div.o{margin-left: 3.33vw}
     div.v{margin-left: 2.664vw}
-    #value .v, #mueValue .v{margin-top: 1.332vw}
-    #value .o, #mueValue .o{margin-left: 3.663vw;}
+    #value .v, #mueValue .v, #valueTotalMn .v{margin-top: 1.332vw}
+    #value .o, #mueValue .o, #valueTotalMn .v{margin-left: 3.663vw;}
     #bottomLeft #trenner{
     height: 7.992vw; margin-top: 0.866vw}
 }
